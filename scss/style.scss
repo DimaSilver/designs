@@ -3,7 +3,193 @@
 @import "fonts";
 @import "global";
 
+.header{
+  padding: 22px 0 32px;
+  position: relative;
+  z-index: 5;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__phone{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.75px;
+    @extend %MullerLight;
+    a{
+      padding-left: 22px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        background-image: url('../images/phone-header.png');
+        width: 12px;
+        height: 15px;
+        left: 0;
+      }
+    }
+  }
+}
+.logo{
+  margin-left: 50px;
+}
 
+.menu{
+  &__btn{
+    width: 26px;
+    height: 18px;
+    cursor: pointer;
+    div{
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+    }
+    div + div {
+      margin-top: 6px;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    color: #fff;
+    max-width: 1170px;
+    width: 100%;
+    height: 595px;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    transform: translateX(-50%) translateY(-300%);
+    background-color: #112537;
+    justify-content: center;
+    transition: all .6s;
+    &.menu__list--active{
+      transform: translateX(-50%) translateY(0%);
+    }
+  }
+  &__list-item{
+    margin: 0 auto;
+    @extend %RalewaySemiBold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: rgba(#fff, .5);
+    transition: color .3s;
+    & + & {
+      margin-top: 35px;
+    }
+    &.menu__list-item--active{
+      color: #f8a25a;
+    }
+    &:hover{
+      color: rgba(#fff, 1);
+    }
+  }
+}
+
+.first__screen {
+  position: relative;
+  padding-bottom: 90px;
+  &-info{
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(#182c3d, .97);
+    color: #fff;
+    z-index: 1;
+  }
+  &-slider{
+    margin: 0 auto;
+    max-width: 1170px;
+    height: 595px;
+  }
+  &-slider__item {
+    max-width: 1170px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-textarea{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45%;
+    max-width: 365px;
+  }
+  &-title{
+    @extend %PlayfairDisplayBold;
+    font-size: 61px;
+    line-height: 64px;
+    margin-bottom: 20px;
+  }
+  &-text{
+    @extend %MullerLight;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  &-link{
+    padding: 19px 91px 20px 29px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    @extend %RalewayExtraBold;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    transition: background-color .3s;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url('../images/arrow-right__first-screen.png');
+      width: 40px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 29px;
+    }
+    &:hover{
+      background-color: #f8a25a;
+    }
+  }
+  &-socials{
+    display: flex;
+    position: absolute;
+    bottom: 34px;
+    left: 40%;
+  }
+  &-socials__item{
+    & + & {
+      margin-left: 37px;
+    }
+  }
+  &-slider{
+    z-index: 0;
+  }
+  &-slider__dots{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: -46px;
+    li{
+      font-size: 0;
+      line-height: 0;
+    }
+    li button {
+      width: 26px;
+      height: 3px;
+      background-color: #cdd3cf;
+      border: none;
+      cursor: pointer;
+      margin-left: 12px;
+      transition: all .3s;
+    }
+  }
+  .slick-active button {
+    background-color: #1a444a;
+  }
+}
 
 
 @import "media";
