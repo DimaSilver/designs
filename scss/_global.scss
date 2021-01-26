@@ -29,9 +29,14 @@ body{
   @extend %RalewayLight;
   font-size: 16px;
   line-height: 25px;
+  color: #838383;
 }
 .container{
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.title{
+  @extend %PlayfairDisplayBold;
+  color: #00203a;
 }

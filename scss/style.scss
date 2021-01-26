@@ -3,6 +3,7 @@
 @import "fonts";
 @import "global";
 
+/*start header*/
 .header{
   padding: 22px 0 32px;
   position: relative;
@@ -16,6 +17,7 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.75px;
+    color: #252525;
     @extend %MullerLight;
     a{
       padding-left: 22px;
@@ -34,7 +36,7 @@
 .logo{
   margin-left: 50px;
 }
-
+/*start menu*/
 .menu{
   &__btn{
     width: 26px;
@@ -87,7 +89,10 @@
     }
   }
 }
+/*end menu*/
+/*end header*/
 
+/*start first__screen*/
 .first__screen {
   position: relative;
   padding-bottom: 90px;
@@ -190,6 +195,44 @@
     background-color: #1a444a;
   }
 }
+/*end first__screen*/
 
+/*start benefits*/
+.benefits{
+  padding-top: 125px;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    &:nth-child(1),
+    &:nth-child(4){
+      max-width: 282px;
+    }
+    &:nth-child(2),
+    &:nth-child(3){
+      max-width: 252px;
+    }
+    &:nth-child(2),
+    &:nth-child(4){
+      margin-top: 175px;
+    }
+  }
+  &__item-number{
+    @extend %PlayfairDisplayBold;
+    font-size: 85px;
+    line-height: 88px;
+    margin: 0;
+    color: rgba(#fea052, .26);
+  }
+  &__item-title{
+    margin: 20px 0 25px;
+    @extend %RalewaySemiBold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #1a292f;
+  }
+}
+/*end benefits*/
 
 @import "media";
