@@ -39,4 +39,12 @@ body{
 .title{
   @extend %PlayfairDisplayBold;
   color: #00203a;
+  font-size: 45px;
+  line-height: 48px;
+}
+.tabs-content{
+  display: none;
+}
+.tabs-content.tabs-content--active{
+  display: block;
 }
