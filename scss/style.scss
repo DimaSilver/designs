@@ -439,6 +439,7 @@
 }
 /*end services*/
 
+/*start video*/
 .video{
   background-size: cover;
   background-repeat: no-repeat;
@@ -487,7 +488,68 @@
     color: #fff;
   }
 }
+/*end video*/
 
-
+/*start work-parts*/
+.work-parts{
+  padding: 130px 0 140px;
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    counter-reset: number;
+  }
+  &__item{
+    width: 356px;
+    padding-left: 85px;
+    padding-top: 25px;
+    position: relative;
+    &::before,
+    &::after{
+      position: absolute;
+    }
+    &::before{
+      content: "";
+      background-image: url('../images/work-parts__before.png');
+      width: 70px;
+      height: 70px;
+      left: 0;
+      top: 0;
+    }
+    &::after{
+      content: counter(number);
+      counter-increment: number;
+      @extend %RalewayMedium;
+      font-size: 12px;
+      line-height: 15px;
+      color: #00203a;
+      top: calc(27px + .85px);
+      left: 31px;
+    }
+    &:nth-child(5){
+      width: 365px;
+    }
+  }
+  &__item-title{
+    @extend %RalewaySemiBold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #313131;
+    padding-bottom: 19px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 41px;
+      background-color: #182c3d;
+      bottom: 0;
+    }
+  }
+}
+/*start work-parts*/
 
 @import "media";
