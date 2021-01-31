@@ -550,6 +550,104 @@
     }
   }
 }
-/*start work-parts*/
+/*end work-parts*/
+
+/*start feedback*/
+.feedback{
+   background-color: #182c3d;
+   &__inner{
+     display: flex;
+     justify-content: space-between;
+   }
+   &__textarea{
+     max-width: 480px;
+     margin: 0 auto;
+     padding: 70px 0 78px;
+   }
+   &__title{
+     font-size: 41px;
+     line-height: 44px;
+     color: #fff;
+   }
+   &__text{
+     @extend %RalewayRegular;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: .5px;
+     color: rgba(#fff, .7);
+   }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  &__form-input{
+    padding: 11px 40px 12px 4px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #918e8b;
+    position: relative;
+    width: 100%;
+    &::placeholder{
+      color: rgba(#fff, .6);
+    }
+  }
+  &__form-input__wrapper{
+    position: relative;
+    & + & {
+      margin-top: 30px;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:first-child{
+      &::after{
+        background-image: url('../images/name-after.png');
+        width: 18px;
+        height: 20px;
+      }
+    }
+    &:nth-child(2){
+      &::after{
+        background-image: url('../images/tel-after.png');
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &:nth-child(3){
+      &::after{
+        background-image: url('../images/e-mail-after.png');
+        width: 22px;
+        height: 16px;
+      }
+      margin-bottom: 46px;
+    }
+  }
+  &__form-btn{
+    padding: 19px 20px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    @extend %RalewayExtraBold;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      background-color: #fff;
+      color: #00203a;
+    }
+  }
+}
+/*end feedback*/
+
 
 @import "media";
