@@ -23,4 +23,13 @@ $(function () {
         prevArrow : '<button type="button" class="portfolio__slider-arrows portfolio__slider-prev"><img src="images/portfolio__slider-arrow__left.png" alt=""></button>',
         nextArrow : '<button type="button" class="portfolio__slider-arrows portfolio__slider-next"><img src="images/portfolio__slider-arrow__right.png" alt=""></button>'
     });
+    $('.reviews__slider').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '60px',
+        arrows: false,
+        dots: true,
+        dotsClass: 'reviews__slider-dots'
+    });
 });

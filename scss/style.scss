@@ -649,5 +649,75 @@
 }
 /*end feedback*/
 
+/*start reviews*/
+.reviews{
+  position: relative;
+  padding: 150px 0 245px;
+  &__title{
+    margin-bottom: 80px;
+  }
+  &__slider-item{
+    position: relative;
+    padding: 40px 140px 50px 70px;
+    background-color: #fff;
+    max-width: 652px;
+    margin: 0 auto;
+  }
+  &__slider-item__title{
+    @extend %RalewaySemiBold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #313131;
+  }
+  &__slider-item__descr{
+    @extend %RalewaySemiBold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .75px;
+    margin-top: -10px;
+    color: #efb172;
+  }
+  &__slider-item__img-wrapper{
+    position: absolute;
+    top: 38px;
+    right: -140px;
+  }
+  &__slider-item__img{
+    width: 215px;
+    height: 192px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  &__slider-item__text{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__slider-dots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -84px;
+    li{
+      font-size: 0;
+      line-height: 0;
+    }
+    li button {
+      width: 26px;
+      height: 3px;
+      background-color: #cdd3cf;
+      border: none;
+      cursor: pointer;
+      margin-left: 12px;
+      transition: all .3s;
+    }
+  }
+  .slick-active button {
+    background-color: #1a444a;
+  }
+}
+/*end reviews*/
+
+
 
 @import "media";
