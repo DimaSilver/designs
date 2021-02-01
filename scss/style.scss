@@ -718,6 +718,37 @@
 }
 /*end reviews*/
 
+/*start footer*/
+.footer{
+  background-color: #182c3d;
+  padding: 70px 0 73px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__center-logo{
+    margin-bottom: 40px;
+  }
+  &__socials{
+    display: flex;
+    width: 144px;
+    justify-content: space-between;
+  }
+  &__copy,
+  &__by{
+    @extend %RalewayMedium;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffc487;
+  }
+}
+/*end footer*/
 
 
 @import "media";
