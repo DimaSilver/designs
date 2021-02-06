@@ -88,6 +88,12 @@
       color: rgba(#fff, 1);
     }
   }
+  &__close{
+    position: absolute;
+    right: 45px;
+    top: 50px;
+    cursor: pointer;
+  }
 }
 /*end menu*/
 /*end header*/
