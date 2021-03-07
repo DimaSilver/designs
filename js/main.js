@@ -34,7 +34,8 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow : '<button type="button" class="portfolio__slider-arrows portfolio__slider-prev"><img src="images/portfolio__slider-arrow__left.png" alt=""></button>',
-        nextArrow : '<button type="button" class="portfolio__slider-arrows portfolio__slider-next"><img src="images/portfolio__slider-arrow__right.png" alt=""></button>'
+        nextArrow : '<button type="button" class="portfolio__slider-arrows portfolio__slider-next"><img src="images/portfolio__slider-arrow__right.png" alt=""></button>',
+        setPosition: true
     });
     $('.reviews__slider').slick({
         centerMode: true,
