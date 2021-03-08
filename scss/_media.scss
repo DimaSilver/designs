@@ -58,6 +58,9 @@
   .benefits__item:nth-child(2), .benefits__item:nth-child(4){
     margin-top: 0;
   }
+  .video{
+    background-position: center bottom 0;
+  }
 }
 @media(max-width: 1050px){
   .first__screen-textarea {
@@ -113,6 +116,9 @@
     font-size: 18px;
     line-height: 21px;
   }
+  .services {
+    padding-bottom: 130px;
+  }
 }
 @media(max-width: 900px){
   .benefits {
@@ -130,6 +136,15 @@
   }
   .services__content-textarea{
     margin: 0 15px;
+  }
+  .video__watch{
+    width: 360px;
+  }
+  .video__watch-text{
+    text-align: center;
+  }
+  .services {
+    padding-bottom: 160px;
   }
 }
 @media(max-width: 820px){
@@ -198,5 +213,8 @@
   }
   .benefits__item-title {
     margin: 20px 0 20px
+  }
+  .services {
+    padding-bottom: 190px;
   }
 }
