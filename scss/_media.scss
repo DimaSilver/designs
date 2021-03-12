@@ -310,3 +310,58 @@
     right: -45px;
   }
 }
+@media(max-width: 660px){
+  .menu__btn {
+    width: 34px;
+    height: 24px;
+  }
+  .menu__btn div + div {
+    margin-top: 9px;
+  }
+  .header__inner {
+    align-items: flex-start;
+  }
+}
+@media(max-width: 580px){
+  .first__screen-slider__item{
+    background-position: center;
+  }
+  .first__screen-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .first__screen-title {
+    font-size: 57px;
+    line-height: 60px;
+  }
+  .first__screen-title {
+    margin-bottom: 25px;
+  }
+  .first__screen-textarea::after {
+    bottom: -50px;
+  }
+}
+@media(max-width: 480px){
+  .first__screen-title {
+    font-size: 53px;
+    line-height: 56px;
+  }
+  .first__screen-text{
+    font-family: 'Muller Ultra Light', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .menu__close {
+    right: 17px;
+    top: 20px;
+  }
+}
+@media(max-width: 400px){
+  .first__screen-title {
+    font-size: 48px;
+    line-height: 51px;
+  }
+  .first__screen-text {
+    margin-bottom: 30px;
+  }
+}
