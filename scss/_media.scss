@@ -310,6 +310,31 @@
     right: -45px;
   }
 }
+@media(max-width: 768px){
+  .reviews__slider-item__img-wrapper{
+    position: static;
+    order: -1;
+    transform: translateY(-20%);
+  }
+  .reviews__slider-item__wrapper{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 38px;
+      background-color: #fdfaf3;
+      top: 0;
+      z-index: 5;
+    }
+  }
+  .reviews__slider-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    padding: 40px 70px 50px 70px;
+  }
+}
 @media(max-width: 720px){
   .benefits__items {
     padding: 0;
@@ -363,6 +388,23 @@
   .feedback__img{
     display: none;
   }
+  .reviews__slider-dots {
+    bottom: -52px;
+  }
+  .reviews__slider-item{
+    text-align: center;
+  }
+  .reviews__slider-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 15px;
+    padding: 40px 50px 45px;
+  }
 }
 @media(max-width: 600px){
   .services__tab {
@@ -403,6 +445,22 @@
   .benefits__item:nth-child(4) {
     max-width: 300px;
   }
+  .reviews__slider-item__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .reviews__slider-item__descr {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .reviews__slider-item__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .reviews__title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 @media(max-width: 520px){
   .services__content-textarea__title{
@@ -431,6 +489,9 @@
     font-size: 16px;
     line-height: 21px;
   }
+  .reviews__title {
+
+  }
 }
 @media(max-width: 480px){
   .first__screen-title {
@@ -448,6 +509,9 @@
   }
   .benefits {
     padding-top: 50px;
+  }
+  .reviews__slider-item {
+    padding: 40px 20px 45px;
   }
 }
 @media(max-width: 440px){
@@ -486,6 +550,12 @@
   .services__content-textarea__link.services__content-textarea__left-link {
     width: 250px;
   }
+  .reviews {
+    padding: 145px 0 245px;
+  }
+  .reviews__slider-item__img-wrapper {
+    margin-bottom: -30px;
+  }
 }
 @media(max-width: 370px){
   .video__watch {
@@ -494,6 +564,9 @@
   .video__watch-text {
     font-size: 22px;
     line-height: 30px;
+  }
+  .reviews__slider-item {
+    padding: 40px 15px 45px;
   }
 }
 @media(max-width: 340px){

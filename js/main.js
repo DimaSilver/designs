@@ -44,6 +44,14 @@ $(function () {
         centerPadding: '60px',
         arrows: false,
         dots: true,
-        dotsClass: 'reviews__slider-dots'
+        dotsClass: 'reviews__slider-dots',
+        responsive: [
+            {
+                breakpoint: 451,
+                settings: {
+                    centerPadding: '0',
+                }
+            }
+        ]
     });
 });
